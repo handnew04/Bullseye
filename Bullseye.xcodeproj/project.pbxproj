@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		681DCCA127C2743800E9F858 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681DCCA027C2743800E9F858 /* Shapes.swift */; };
 		685952EC27447EFC00E048E7 /* ButtonViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685952EB27447EFC00E048E7 /* ButtonViews.swift */; };
+		686FF13F27C27D220028CDDC /* RoundViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686FF13E27C27D220028CDDC /* RoundViews.swift */; };
 		68B9A60626F49D3F00601AC4 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B9A60526F49D3F00601AC4 /* Game.swift */; };
 		68B9F4A5271AC39800DB10B5 /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B9F4A4271AC39800DB10B5 /* TextViews.swift */; };
 		68C70C2226E9DFB40014C687 /* BullseyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C70C2126E9DFB40014C687 /* BullseyeApp.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		681DCCA027C2743800E9F858 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		685952EB27447EFC00E048E7 /* ButtonViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViews.swift; sourceTree = "<group>"; };
+		686FF13E27C27D220028CDDC /* RoundViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundViews.swift; sourceTree = "<group>"; };
 		68B9A60526F49D3F00601AC4 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		68B9F4A4271AC39800DB10B5 /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
 		68C70C1E26E9DFB40014C687 /* Bullseye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +97,7 @@
 				68B9F4A4271AC39800DB10B5 /* TextViews.swift */,
 				685952EB27447EFC00E048E7 /* ButtonViews.swift */,
 				681DCCA027C2743800E9F858 /* Shapes.swift */,
+				686FF13E27C27D220028CDDC /* RoundViews.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				68B9A60626F49D3F00601AC4 /* Game.swift in Sources */,
 				68C70C2226E9DFB40014C687 /* BullseyeApp.swift in Sources */,
 				681DCCA127C2743800E9F858 /* Shapes.swift in Sources */,
+				686FF13F27C27D220028CDDC /* RoundViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
