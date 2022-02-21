@@ -40,14 +40,51 @@ struct SlideLabelText: View {
       Text(text)
         .bold()
         .foregroundColor(Color("TextColor"))
+        .frame(width:35.0)
+  }
+}
+
+struct LabelText: View {
+  var text: String
+  
+  var body: some View {
+    Text(text)
+      .bold()
+      .font(.caption)
+      .kerning(1.5)
+      .foregroundColor(Color("TextColor"))
+  }
+}
+
+struct ScoreText: View {
+  var text: String
+  
+  var body: some View {
+    Text(text)
+      .bold()
+      .font(.title3)
+      .kerning(-0.2)
+      .multilineTextAlignment(.center)
+      .foregroundColor(Color("TextColor"))
+  }
+}
+
+struct PreviewTextView: View {
+  
+  var body: some View {
+    VStack{
+    InstructionText(text : "Instructions")
+    BigNumberText(text: "999")
+    LabelText(text: "Label")
+    ScoreText(text: "999")
+    }
   }
 }
 
 struct TextViews_Previews: PreviewProvider {
   static var previews: some View {
-    VStack{
-    InstructionText(text : "Instructions")
-    BigNumberText(text: "999")
-    }
+    PreviewTextView()
+    PreviewTextView()
+      .preferredColorScheme(.dark)
   }
 }

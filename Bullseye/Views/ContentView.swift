@@ -15,8 +15,7 @@ struct ContentView: View {
   
   var body: some View {
     ZStack {
-      Color("BackgroundColor")
-        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+      BackgroundView(game: $game)
       VStack {
         InstructionView(game: $game)
         SliderView(sliderValue: $sliderValue)
@@ -36,6 +35,7 @@ struct InstructionView: View {
         .padding(.trailing, 30.0)
       BigNumberText(text: String(game.target))
     }
+    
   }
 }
 
@@ -44,10 +44,10 @@ struct SliderView: View {
   
   var body: some View {
     HStack{
-    SlideLabelText(text: "1")
-    Slider(value: $sliderValue, in:1.0...100.0)
-    SlideLabelText(text: "100")
-      .padding()
+      SlideLabelText(text: "1")
+      Slider(value: $sliderValue, in:1.0...100.0)
+      SlideLabelText(text: "100")
+        .padding()
     }
   }
 }
