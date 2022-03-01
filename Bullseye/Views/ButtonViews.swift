@@ -8,19 +8,24 @@
 import SwiftUI
 
 struct HitMeButtion: View {
-    var body: some View {
-      Button(action: {
-        print("Hello, SwiftUI!")
-        //alertIsVisible = true
-      }) {
-        Text("Hit me".uppercased())
-          .bold()
-          .font(.title3)
-      }    }
+  @Binding var alertIsVisible: Bool
+  //  @Binding var game: Game
+  //  @Binding var sliderValue: Double
+  
+  var body: some View {
+    Button(action: {
+      alertIsVisible = true
+      //game.startNewRound(points: game.points(sliderValue: Int(sliderValue)))
+    }) {
+      Text("Hit me".uppercased())
+        .bold()
+        .font(.title3)
+    }
+  }
 }
 
-struct ButtonViews_Previews: PreviewProvider {
-    static var previews: some View {
-        HitMeButtion()
-    }
-}
+//struct ButtonViews_Previews: PreviewProvider {
+//  static var previews: some View {
+//    HitMeButtion()
+//  }
+//}

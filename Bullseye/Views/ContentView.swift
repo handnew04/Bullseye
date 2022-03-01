@@ -58,7 +58,7 @@ struct HitMeButtonView: View {
   @Binding var game: Game
   
   var body: some View {
-    HitMeButtion()
+    HitMeButtion(alertIsVisible: $alertIsVisible)
       .padding(20.0)
       .background(ZStack {
         Color("ButtonColor")
@@ -72,7 +72,10 @@ struct HitMeButtonView: View {
       )
       .alert(isPresented: $alertIsVisible, content: {
         let roundedValue = Int(sliderValue.rounded())
-        return Alert(title: Text("Hello there!"), message: Text("slider's value is \(roundedValue).\n" + "You scored \(game.points(sliderValue: roundedValue)) points this round."), dismissButton: .default(Text("Awesome!")))
+        let points = game.points(sliderValue: roundedValue)
+        return Alert(title: Text("Hello there!"), message: Text("slider's value is \(roundedValue).\n" + "You scored \(game.points(sliderValue: roundedValue)) points this round."), dismissButton: .default(Text("Awesome!")){
+          game.startNewRound(points: points)
+        })
       })
   }
 }
